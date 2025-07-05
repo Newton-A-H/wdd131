@@ -68,7 +68,7 @@ header nav a {
     align-items: center;
 }
 :hover nav a {
-    color: #ffcc00;
+    color: white;
     text-decoration: underline;
 }
 h1 {
