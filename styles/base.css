@@ -67,6 +67,9 @@ header nav a {
     gap: 20px;
     align-items: center;
 }
+:hover {
+    background-color: #e0e0e0;
+}
 h1 {
     background-color: #f7f7f7;
     color: black;
