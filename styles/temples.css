@@ -56,10 +56,10 @@ main {
 }
 
 .grid {
-    display: block;
+    display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    margin: 0;
+    margin: 1rem;
     padding: 1rem;
 }
 
