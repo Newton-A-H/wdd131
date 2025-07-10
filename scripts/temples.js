@@ -6,7 +6,7 @@ const navMenu = document.querySelector(".navigation");
 
 menuButton.addEventListener("click", () => {
     nav.classList.toggle("open");
-    if (nav.classList.contains("open")) {
+    if (navMenu.classList.contains("open")) {
         menuButton.textContent = "X";
     } else {
         menuButton.textContent = "☰"
