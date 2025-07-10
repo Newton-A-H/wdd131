@@ -37,6 +37,10 @@ nav {
     list-style: none;
 }
 
+.navigation open {
+    display: flex;
+}
+
 header h1 {
     flex: 2;
     text-align: left;
