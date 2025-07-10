@@ -5,10 +5,6 @@ const menuButton = document.querySelector("#menu");
 const navMenu = document.querySelector(".navigation");
 
 menuButton.addEventListener("click", () => {
-    nav.classList.toggle("open");
-    if (navMenu.classList.contains("open")) {
-        menuButton.textContent = "X";
-    } else {
-        menuButton.textContent = "☰"
-    }
+  navMenu.classList.toggle("open");
+  menuButton.textContent = navMenu.classList.contains("open") ? "X" : "☰";
 });
