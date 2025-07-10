@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temple Album</title>
+        <meta name="description" content="A collection of temples from around the world, showcasing their unique architecture and significance.">
+        <meta name="author" content="Newton Hinga">
+        <link rel="stylesheet" href="styles/temples.css">
+        <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+        <href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="scripts/temples.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Temple Album</h1>
+            <nav>
+                <button id="menu">&#9776;</button>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Home</h1>
+            <div class="grid">
+                <figure>
+                    <img src="images/boise-idaho.jpg" alt="Boise Idaho Temple">
+                    <figcaption>Boise Idaho Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/washington-dc.jpeg" alt="Washington D.C. Temple">
+                    <figcaption>Washington D.C. Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/san-diego.jpg" alt="San Diego Temple">
+                    <figcaption>San Diego Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bern-switzerland.jpg" alt="Bern Switzerland Temple">
+                    <figcaption>Bern Switzerland Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/anchorage-alaska.jpg" alt="Anchorage Alaska Temple">
+                    <figcaption>Anchorage Alaska Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/aba-nigeria.jpg" alt="Aba Nigeria Temple">
+                    <figcaption>Abas Nigeria Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Rome-Italy.jpg" alt="Rome Italy Temple">
+                    <figcaption>Rome Italy Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Billings-Montana.jpg" alt="Billings Montana Temple">
+                    <figcaption>Billings Montana Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/atlanta-georgia.jpg" alt="Atlanta Georgia Temple">
+                    <figcaption>Atlanta Georgia Temple</figcaption>
+                </figure>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Newton Hinga, Kenya.</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script>
+            document.getElementById('currentyear').textContent = new Date().getFullYear();
+            document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
+        </script>
+    </body>
+</html>
