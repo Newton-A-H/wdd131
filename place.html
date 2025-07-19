@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discover Kenya</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Newton Hinga">
+        <meta name="author" content="Newton Hinga">
+        <link rel="stylesheet" href="styles/place.css">
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Discover Kenya</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">Culture</a>
+                <a href="#">Wildlife</a>
+                <a href="#">Travel Tips</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="Hero">
+                <source srcset="images/kenyan-landscape.webp" media="(min-width: 800px)">
+                <source srcset="images/kenyan-landscape.webp" media="(min-width: 500px)">
+                <img src="images/kenyan-landscape.webp" alt="Scenic view of Kenya landscape with wildlife" />
+            </section>
+            <section class="About" id="culture">
+                <h2>About Kenya</h2>
+                <p>Kenya is a country in East Africa known for its diverse wildlife, 
+                    stunning landscapes, and rich cultural heritage. From the bustling 
+                    city of Nairobi to the serene beaches of Mombasa, Kenya offers a unique 
+                    blend of modernity and tradition.
+                </p>
+                <p>
+                    The people of Kenya are equally diverse, with over 40 ethnic groups, each 
+                    having its own language and cultural traditions. Swahili and English are the 
+                    official languages spoken across the country.
+                </p>
+            </section>
+            <section class="Places">
+                <h2>Places to Visit</h2>
+                <ul>
+                    <li><a href="https://www.maasaimara.com/">Maasai Mara</a></li>
+                    <li><a href="https://www.nationalparkskenya.com/amboseli-national-park/">Amboseli National Park</a></li>
+                    <li><a href="https://www.kws.go.ke/parks/tsavo-national-park">Tsavo National Park</a></li>
+                    <li><a href="https://www.kws.go.ke/parks/lake-nakuru-national-park">Lake Nakuru National Park</a></li>
+                    <li><a href="https://www.kws.go.ke/parks/samburu-national-reserve">Samburu National Reserve</a></li>
+                </ul>
+            </section>
+            <section class="Events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li><a href="#">The Great Migration - July - August 2025</a></li>
+                    <li><a href="#">Nairobi International Trade Fair - September 2025</a></li>
+                    <li><a href="#">Lamu Cultural Festival - November 2025</a></li>
+                    <li><a href="#">Kenya Music Festival - August 2025</a></li>
+                </ul>
+            </section>
+            <section class="Gallery">
+                <h2>Photo Gallery</h2>
+                <div class="gallery-grid">
+                    <figure>
+                        <img src="images/maasai-mara.jpeg" style="width: 300px; height: auto;" alt="Maasai Mara">
+                        <figcaption>Maasai Mara</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/amboseli.jpeg" style="width: 300px; height: auto;" alt="Amboseli National Park">
+                        <figcaption>Amboseli National Park</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/tsavo.jpeg" style="width: 300px; height: auto;" alt="Tsavo National Park">
+                        <figcaption>Tsavo National Park</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section class="Travel" id="travel">
+                <h2>Travel Tips</h2>
+                <p>Traveling to Kenya is generally safe, but it is important 
+                    to follow local travel advisories and guidelines. Here are some helpful tips:
+                </p>
+                <ul>
+                    <li>Carry local currency (Kenyan Shillings) for smaller purchases.</li>
+                    <li>Use bottled water and stay hydrated.</li>
+                    <li>Respect local customs and dress modestly in rural areas.</li>
+                    <li>Use reputable tour operators for safari bookings.</li>
+                </ul>
+            </section>
+            <section class="Weather">
+                <h2>Weather <span class="icon" aria-hidden="true"></span></h2>
+                <div class="conditions">
+                    <p><strong>Temperature:</strong> <span id="temp">22</span> &deg;C</p>
+                    <p><strong>Wind Speed:</strong> <span id="speed">10</span> km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="chill">...</span></p>
+                    <img src="images/weather.svg" class="weather-icon" alt="Partly cloudy weather icon">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Newton Hinga | Kenya.</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>

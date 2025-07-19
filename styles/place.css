@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #003366;
+    --secondary-color: #ffffff;
+    --accent-color: #ff0000;
+    --font-family: 'Segoe UI', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--secondary-color);
+    color: black;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    margin: 0 10px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.about, .weather {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.about h2, .weather h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.gallery img {
+    width: 10px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.weather-icon {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.weather h2::after {
+    content: " ⛅";
+    margin-left: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    margin-top: 30px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+  }
+
+    .hero {
+        grid-column: span 2;
+  }
+
+    .weather-icon {
+        display: none;
+  }
+}
