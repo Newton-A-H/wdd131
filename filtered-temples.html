@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Filtered Temples</title>
-  <meta name="description" content="A dynamic collection of temples with filtering options." />
-  <meta name="author" content="Newton Hinga" />
-  <link rel="stylesheet" href="styles/filtered-temples.css" />
-  <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <script src="scripts/filtered-temples.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtered Temples</title>
+    <meta name="description" content="A dynamic collection of temples with filtering options." />
+    <meta name="author" content="Newton Hinga" />
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="scripts/filtered-temples.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Temple Album</h1>
-    <nav>
-      <button id="menu">&#9776;</button>
-      <ul class="navigation">
-        <li><a href="#" data-filter="home">Home</a></li>
-        <li><a href="#" data-filter="old">Old</a></li>
-        <li><a href="#" data-filter="new">New</a></li>
-        <li><a href="#" data-filter="large">Large</a></li>
-        <li><a href="#" data-filter="small">Small</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+        <button id="menu">&#9776;</button>
+        <ul class="navigation">
+            <li><a href="#" data-filter="home">Home</a></li>
+            <li><a href="#" data-filter="old">Old</a></li>
+            <li><a href="#" data-filter="new">New</a></li>
+            <li><a href="#" data-filter="large">Large</a></li>
+            <li><a href="#" data-filter="small">Small</a></li>
+        </ul>
+        </nav>
+    </header>
 
-  <main>
-    <h2>Temples</h2>
-    <div id="temples-container" class="grid"></div>
-  </main>
+    <main>
+        <h2>Temples</h2>
+        <div id="temples-container" class="grid"></div>
+    </main>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Newton Hinga | Kenya.</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-  </footer>
+    <footer>
+        <p>&copy; <span id="year"></span> Newton Hinga | Kenya.</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
