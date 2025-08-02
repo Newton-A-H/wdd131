@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
+    <meta name="description" content="Submit your product review for a chance to share your experience and feedback.">
+    <meta name="author" content="Newton Hinga">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
@@ -16,9 +19,7 @@
         <select id="product" name="product" required>
             <option value="" disabled selected>Select a Product ...</option>
         </select>
-
-        <img id="productImg" src="" alt="" class="hidden" />
-
+        <img id="productImg" src="" alt="" class="hidden">
         <fieldset>
             <legend>Overall Rating</legend>
             <div class="stars">
@@ -32,7 +33,7 @@
         </fieldset>
 
         <label for="install-date">Date of Installation</label>
-        <input type="date" id="install-date" name="installDate" required />
+        <input type="date" id="install-date" name="installDate" required>
 
         <fieldset>
             <legend>Which features did you find useful? (Check all that apply)</legend>
@@ -47,7 +48,7 @@
         <p><small id="charCount">0/500 characters</small></p>
 
         <label for="username">Your Name <span>(Optional)</span></label>
-        <input type="text" id="username" name="username" minlength="2" pattern="[A-Za-z ]*"/>
+        <input type="text" id="username" name="username" minlength="2" pattern="[A-Za-z ]*">
 
         <input type="submit" value="Post Review">
         <input type="reset" value="Clear Form">
