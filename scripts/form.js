@@ -30,8 +30,8 @@ productSelect.addEventListener("change", e => {
     productImg.alt = products.find(p => p.id === selected).name;
     productImg.classList.remove("hidden");
   } else {
-    productImg.src = "";
-    productImg.alt = "";
+    productImg.src = "images/placeholder.jpg";
+    productImg.alt = "Product preview";
     productImg.classList.add("hidden");
   }
 });
