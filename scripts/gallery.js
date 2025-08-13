@@ -1,12 +1,18 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const galleryImages = [
-  "images/gallery1.jpg",
-  "images/gallery2.jpg",
-  "images/gallery3.jpg",
-  "images/gallery4.jpg",
-  "images/gallery5.jpg",
-  "images/gallery6.jpg"
+  "images/lion.jpg",
+  "images/amboseli.jpg",
+  "images/jeep.jpg",
+  "images/sunset.jpg",
+  "images/giraffes.jpg",
+  "images/cheetah.jpg",
+  "images/wildbeest.jpg",
+  "images/birds.jpg",
+  "images/hippos.jpg",
+  "images/zebras.jpg",
+  "images/rhino.jpg",
+  "images/maasai.jpg"
 ];
 
 const galleryContainer = document.querySelector(".gallery-grid");

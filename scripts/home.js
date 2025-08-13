@@ -1,18 +1,11 @@
-// me.js
-
-/** ================================
+/**
+================================
  *  Kenya Safari Adventures - JS
  *  Author: Newton Hinga
  *  Description: Handles dynamic UI updates, accessibility enhancements,
  *               and utility features across the website.
- *  Last updated: 2025-08-08
- * =================================*/
-
-/** ---------- Global Utility Functions ---------- **/
-
-/**
- * Sets the current year in the footer dynamically.
- */
+=================================
+ * */
 function setCurrentYear() {
   const yearElement = document.getElementById("year");
   if (yearElement) {
@@ -21,9 +14,6 @@ function setCurrentYear() {
   }
 }
 
-/**
- * Smoothly scrolls to a section if an anchor link is clicked.
- */
 function enableSmoothScroll() {
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
   anchorLinks.forEach((link) => {
@@ -37,9 +27,6 @@ function enableSmoothScroll() {
   });
 }
 
-/**
- * Highlights the active navigation link based on current URL.
- */
 function highlightActiveNavLink() {
   const links = document.querySelectorAll(".nav-links a");
   const path = window.location.pathname.split("/").pop();
@@ -53,9 +40,6 @@ function highlightActiveNavLink() {
   });
 }
 
-/**
- * Toggle mobile menu if used in future updates.
- */
 function initMobileMenuToggle() {
   const navToggle = document.querySelector(".nav-toggle");
   const navMenu = document.querySelector(".nav-links");
@@ -68,9 +52,6 @@ function initMobileMenuToggle() {
   }
 }
 
-/**
- * Enhance accessibility: keyboard support for nav menus, skip links.
- */
 function improveAccessibility() {
   document.addEventListener("keydown", function (e) {
     if (e.key === "Tab") {
@@ -79,9 +60,6 @@ function improveAccessibility() {
   });
 }
 
-/**
- * Show a scroll-to-top button when user scrolls down.
- */
 function enableScrollToTop() {
   const scrollBtn = document.createElement("button");
   scrollBtn.innerText = "↑ Top";
@@ -99,9 +77,6 @@ function enableScrollToTop() {
   });
 }
 
-/**
- * Lazy-load images for better performance.
- */
 function initLazyLoading() {
   const lazyImages = document.querySelectorAll("img[loading='lazy']");
   if ("IntersectionObserver" in window) {
@@ -120,7 +95,6 @@ function initLazyLoading() {
   }
 }
 
-/** ---------- Init All Functions When DOM is Ready ---------- **/
 
 document.addEventListener("DOMContentLoaded", () => {
   setCurrentYear();
